@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8D153A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Sri Lanka 2026/27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+ .leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer { position: absolute; left: 0; top: 0; } .leaflet-container { overflow: hidden; } .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow { -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-user-drag: none; } .leaflet-tile::selection { background: transparent; } .leaflet-safari .leaflet-tile { image-rendering: -webkit-optimize-contrast; } .leaflet-safari .leaflet-tile-container { width: 1600px; height: 1600px; -webkit-transform-origin: 0 0; } .leaflet-marker-icon, .leaflet-marker-shadow { display: block; } .leaflet-container .leaflet-overlay-pane svg { max-width: none !important; max-height: none !important; } .leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile { max-width: none !important; max-height: none !important; width: auto; padding: 0; } .leaflet-container img.leaflet-tile { mix-blend-mode: plus-lighter; } .leaflet-container.leaflet-touch-zoom { -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; } .leaflet-container.leaflet-touch-drag { -ms-touch-action: pinch-zoom; touch-action: none; touch-action: pinch-zoom; } .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom { -ms-touch-action: none; touch-action: none; } .leaflet-container { -webkit-tap-highlight-color: transparent; } .leaflet-container a { -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); } .leaflet-tile { filter: inherit; visibility: hidden; } .leaflet-tile-loaded { visibility: inherit; } .leaflet-zoom-box { width: 0; height: 0; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 800; } .leaflet-overlay-pane svg { -moz-user-select: none; } .leaflet-pane { z-index: 400; } .leaflet-tile-pane { z-index: 200; } .leaflet-overlay-pane { z-index: 400; } .leaflet-shadow-pane { z-index: 500; } .leaflet-marker-pane { z-index: 600; } .leaflet-tooltip-pane { z-index: 650; } .leaflet-popup-pane { z-index: 700; } .leaflet-map-pane canvas { z-index: 100; } .leaflet-map-pane svg { z-index: 200; } .leaflet-vml-shape { width: 1px; height: 1px; } .lvml { behavior: url(#default#VML); display: inline-block; position: absolute; } .leaflet-control { position: relative; z-index: 800; pointer-events: visiblePainted; pointer-events: auto; } .leaflet-top, .leaflet-bottom { position: absolute; z-index: 1000; pointer-events: none; } .leaflet-top { top: 0; } .leaflet-right { right: 0; } .leaflet-bottom { bottom: 0; } .leaflet-left { left: 0; } .leaflet-control { float: left; clear: both; } .leaflet-right .leaflet-control { float: right; } .leaflet-top .leaflet-control { margin-top: 10px; } .leaflet-bottom .leaflet-control { margin-bottom: 10px; } .leaflet-left .leaflet-control { margin-left: 10px; } .leaflet-right .leaflet-control { margin-right: 10px; } .leaflet-fade-anim .leaflet-popup { opacity: 0; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; transition: opacity 0.2s linear; } .leaflet-fade-anim .leaflet-map-pane .leaflet-popup { opacity: 1; } .leaflet-zoom-animated { -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; } svg.leaflet-zoom-animated { will-change: transform; } .leaflet-zoom-anim .leaflet-zoom-animated { -webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1); -moz-transition: -moz-transform 0.25s cubic-bezier(0,0,0.25,1); transition: transform 0.25s cubic-bezier(0,0,0.25,1); } .leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile { -webkit-transition: none; -moz-transition: none; transition: none; } .leaflet-zoom-anim .leaflet-zoom-hide { visibility: hidden; } .leaflet-interactive { cursor: pointer; } .leaflet-grab { cursor: -webkit-grab; cursor: -moz-grab; cursor: grab; } .leaflet-crosshair, .leaflet-crosshair .leaflet-interactive { cursor: crosshair; } .leaflet-popup-pane, .leaflet-control { cursor: auto; } .leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable { cursor: move; cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing; } .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container { pointer-events: none; } .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path { pointer-events: visiblePainted; pointer-events: auto; } .leaflet-container { background: #ddd; outline-offset: 1px; } .leaflet-container a { color: #0078A8; } .leaflet-zoom-box { border: 2px dotted #38f; background: rgba(255,255,255,0.5); } .leaflet-container { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 12px; font-size: 0.75rem; line-height: 1.5; } .leaflet-bar { box-shadow: 0 1px 5px rgba(0,0,0,0.65); border-radius: 4px; } .leaflet-bar a { background-color: #fff; border-bottom: 1px solid #ccc; width: 26px; height: 26px; line-height: 26px; display: block; text-align: center; text-decoration: none; color: black; } .leaflet-bar a, .leaflet-control-layers-toggle { background-position: 50% 50%; background-repeat: no-repeat; display: block; } .leaflet-bar a:hover, .leaflet-bar a:focus { background-color: #f4f4f4; } .leaflet-bar a:first-child { border-top-left-radius: 4px; border-top-right-radius: 4px; } .leaflet-bar a:last-child { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-bottom: none; } .leaflet-bar a.leaflet-disabled { cursor: default; background-color: #f4f4f4; color: #bbb; } .leaflet-touch .leaflet-bar a { width: 30px; height: 30px; line-height: 30px; } .leaflet-touch .leaflet-bar a:first-child { border-top-left-radius: 2px; border-top-right-radius: 2px; } .leaflet-touch .leaflet-bar a:last-child { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; } .leaflet-control-zoom-in, .leaflet-control-zoom-out { font: bold 18px 'Lucida Console', Monaco, monospace; text-indent: 1px; } .leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out { font-size: 22px; } .leaflet-control-layers { box-shadow: 0 1px 5px rgba(0,0,0,0.4); background: #fff; border-radius: 5px; } .leaflet-control-layers-toggle { width: 36px; height: 36px; } .leaflet-retina .leaflet-control-layers-toggle { background-size: 26px 26px; } .leaflet-touch .leaflet-control-layers-toggle { width: 44px; height: 44px; } .leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle { display: none; } .leaflet-control-layers-expanded .leaflet-control-layers-list { display: block; position: relative; } .leaflet-control-layers-expanded { padding: 6px 10px 6px 6px; color: #333; background: #fff; } .leaflet-control-layers-scrollbar { overflow-y: scroll; overflow-x: hidden; padding-right: 5px; } .leaflet-control-layers-selector { margin-top: 2px; position: relative; top: 1px; } .leaflet-control-layers label { display: block; font-size: 13px; font-size: 1.08333em; } .leaflet-control-layers-separator { height: 0; border-top: 1px solid #ddd; margin: 5px -10px 5px -6px; } .leaflet-default-icon-path { } .leaflet-container .leaflet-control-attribution { background: #fff; background: rgba(255, 255, 255, 0.8); margin: 0; } .leaflet-control-attribution, .leaflet-control-scale-line { padding: 0 5px; color: #333; line-height: 1.4; } .leaflet-control-attribution a { text-decoration: none; } .leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus { text-decoration: underline; } .leaflet-attribution-flag { display: inline !important; vertical-align: baseline !important; width: 1em; height: 0.6669em; } .leaflet-left .leaflet-control-scale { margin-left: 5px; } .leaflet-bottom .leaflet-control-scale { margin-bottom: 5px; } .leaflet-control-scale-line { border: 2px solid #777; border-top: none; line-height: 1.1; padding: 2px 5px 1px; white-space: nowrap; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.8); text-shadow: 1px 1px #fff; } .leaflet-control-scale-line:not(:first-child) { border-top: 2px solid #777; border-bottom: none; margin-top: -2px; } .leaflet-control-scale-line:not(:first-child):not(:last-child) { border-bottom: 2px solid #777; } .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { box-shadow: none; } .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { border: 2px solid rgba(0,0,0,0.2); background-clip: padding-box; } .leaflet-popup { position: absolute; text-align: center; margin-bottom: 20px; } .leaflet-popup-content-wrapper { padding: 1px; text-align: left; border-radius: 12px; } .leaflet-popup-content { margin: 13px 24px 13px 20px; line-height: 1.3; font-size: 13px; font-size: 1.08333em; min-height: 1px; } .leaflet-popup-content p { margin: 17px 0; margin: 1.3em 0; } .leaflet-popup-tip-container { width: 40px; height: 20px; position: absolute; left: 50%; margin-top: -1px; margin-left: -20px; overflow: hidden; pointer-events: none; } .leaflet-popup-tip { width: 17px; height: 17px; padding: 1px; margin: -10px auto 0; pointer-events: auto; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: white; color: #333; box-shadow: 0 3px 14px rgba(0,0,0,0.4); } .leaflet-container a.leaflet-popup-close-button { position: absolute; top: 0; right: 0; border: none; text-align: center; width: 24px; height: 24px; font: 16px/24px Tahoma, Verdana, sans-serif; color: #757575; text-decoration: none; background: transparent; } .leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus { color: #585858; } .leaflet-popup-scrolled { overflow: auto; } .leaflet-oldie .leaflet-popup-content-wrapper { -ms-zoom: 1; } .leaflet-oldie .leaflet-popup-tip { width: 24px; margin: 0 auto; -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"; filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678); } .leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip { border: 1px solid #999; } .leaflet-div-icon { background: #fff; border: 1px solid #666; } .leaflet-tooltip { position: absolute; padding: 6px; background-color: #fff; border: 1px solid #fff; border-radius: 3px; color: #222; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.4); } .leaflet-tooltip.leaflet-interactive { cursor: pointer; pointer-events: auto; } .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { position: absolute; pointer-events: none; border: 6px solid transparent; background: transparent; content: ""; } .leaflet-tooltip-bottom { margin-top: 6px; } .leaflet-tooltip-top { margin-top: -6px; } .leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before { left: 50%; margin-left: -6px; } .leaflet-tooltip-top:before { bottom: 0; margin-bottom: -12px; border-top-color: #fff; } .leaflet-tooltip-bottom:before { top: 0; margin-top: -12px; margin-left: -6px; border-bottom-color: #fff; } .leaflet-tooltip-left { margin-left: -6px; } .leaflet-tooltip-right { margin-left: 6px; } .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { top: 50%; margin-top: -6px; } .leaflet-tooltip-left:before { right: 0; margin-right: -12px; border-left-color: #fff; } .leaflet-tooltip-right:before { left: 0; margin-left: -12px; border-right-color: #fff; } @media print { .leaflet-control { -webkit-print-color-adjust: exact; print-color-adjust: exact; } } 
+</style>
+<style>
+/* Layout: phone-first app shell — content views above a fixed tab bar; map view runs edge to edge. Kandyan maroon + temple gold carry the identity, tea-green neutrals carry the rest. */
+:root{
+  --bg:#EEF2EA;
+  --surface:#FBFCF8;
+  --surface-2:#E3EADD;
+  --ink:#14241B;
+  --muted:#5A6B60;
+  --line:#D3DCCD;
+  --maroon:#8D153A;
+  --maroon-ink:#FFF4E2;
+  --gold:#E3A537;
+  --gold-soft:#F6E3B8;
+  --tea:#2C6A46;
+  --tea-soft:#D6E8DA;
+  --ocean:#1D6C78;
+  --ocean-soft:#D2E7E8;
+  --warn:#A35A00;
+  --warn-soft:#FBEBD2;
+  --sea:#CFE2E0;
+  --island:#E6EDDC;
+  --island-edge:#7FA287;
+  --shadow:0 1px 2px rgba(20,36,27,.06),0 6px 20px rgba(20,36,27,.08);
+  --f-display:"Abhaya Libre",Georgia,"Times New Roman",serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1611;--surface:#15211A;--surface-2:#1B2A21;--ink:#E8EEE5;--muted:#98A99D;--line:#25362B;
+    --maroon:#B8264F;--maroon-ink:#FFF4E2;--gold:#F0B54E;--gold-soft:#3A2E16;
+    --tea:#6DBA8B;--tea-soft:#1D3526;--ocean:#5BB5C0;--ocean-soft:#15313A;--warn:#F2B25A;--warn-soft:#3A2A12;
+    --sea:#0B2228;--island:#1A2A1F;--island-edge:#3F6B4C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1611;--surface:#15211A;--surface-2:#1B2A21;--ink:#E8EEE5;--muted:#98A99D;--line:#25362B;
+  --maroon:#B8264F;--maroon-ink:#FFF4E2;--gold:#F0B54E;--gold-soft:#3A2E16;
+  --tea:#6DBA8B;--tea-soft:#1D3526;--ocean:#5BB5C0;--ocean-soft:#15313A;--warn:#F2B25A;--warn-soft:#3A2A12;
+  --sea:#0B2228;--island:#1A2A1F;--island-edge:#3F6B4C;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+a{color:var(--maroon)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:6px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.1}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- app shell ---------- */
+.app{height:100%;max-width:480px;margin:0 auto;display:flex;flex-direction:column;background:var(--bg);position:relative;overflow:hidden}
+@media (min-width:520px){.app{border-left:1px solid var(--line);border-right:1px solid var(--line)}}
+.views{flex:1;min-height:0;position:relative}
+.view{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.pad{padding-inline:16px;padding-block:0 28px}
+
+.tabbar{flex:none;display:grid;grid-template-columns:repeat(5,1fr);background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:1000}
+.tab{appearance:none;border:0;background:none;padding:8px 2px 9px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:var(--muted);cursor:pointer;letter-spacing:.01em}
+.tab svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tab[aria-selected="true"]{color:var(--maroon)}
+.tab[aria-selected="true"] svg{stroke-width:2.1}
+
+/* ---------- Kandyan band ---------- */
+.band{height:14px;background-color:var(--maroon);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='14' viewBox='0 0 22 14'%3E%3Cpath d='M11 13C6.5 11 6.5 4 11 1c4.5 3 4.5 10 0 12z' fill='%23E3A537'/%3E%3Cpath d='M11 13C8.8 11.5 8.8 7 11 5c2.2 2 2.2 6.5 0 8z' fill='%238D153A'/%3E%3Ccircle cx='0' cy='11' r='1.6' fill='%23E3A537'/%3E%3Ccircle cx='22' cy='11' r='1.6' fill='%23E3A537'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;background-position:center}
+
+/* ---------- overview ---------- */
+.hero{background:var(--maroon);color:var(--maroon-ink);padding:22px 16px 20px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-40px;width:230px;height:230px;border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,rgba(227,165,55,.28) 0 30%,transparent 31%),
+             repeating-radial-gradient(circle at 50% 50%,rgba(227,165,55,.18) 0 2px,transparent 2px 14px);pointer-events:none}
+.ayubowan{font-family:var(--f-display);font-size:17px;color:var(--gold);display:flex;gap:8px;align-items:baseline}
+.ayubowan small{font-family:var(--f-body);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;color:var(--maroon-ink)}
+.hero h1{font-size:52px;font-weight:800;margin-top:6px;letter-spacing:-.01em}
+.hero h1 span{color:var(--gold)}
+.hero .dates{margin-top:6px;font-size:14px;opacity:.92}
+.count{margin-top:18px;display:flex;align-items:flex-end;gap:12px;position:relative;z-index:1}
+.count b{font-family:var(--f-display);font-size:64px;line-height:.85;font-weight:800;color:var(--gold)}
+.count span{font-size:14px;line-height:1.3;padding-bottom:4px}
+
+.section-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:26px 0 10px}
+.section-h h2{font-size:24px;font-weight:700}
+.section-h .aside{font-size:12px;color:var(--muted)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px}
+.today{margin-top:16px;box-shadow:var(--shadow)}
+.today .eyebrow{color:var(--maroon)}
+.today h3{font-size:22px;margin-top:4px}
+.today p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.linkbtn{appearance:none;border:0;background:none;padding:0;margin-top:10px;color:var(--maroon);font-weight:700;font-size:14px;cursor:pointer}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 8px;text-align:center}
+.stat b{display:block;font-family:var(--f-display);font-size:28px;line-height:1;font-weight:800;color:var(--tea)}
+.stat span{font-size:11px;color:var(--muted);font-weight:600}
+
+/* route spine */
+.spine{list-style:none;margin:0;padding:0;position:relative}
+.spine li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;padding:9px 0;position:relative;cursor:pointer}
+.spine li::before{content:"";position:absolute;left:16px;top:0;bottom:0;width:2px;background:repeating-linear-gradient(var(--line) 0 5px,transparent 5px 9px)}
+.spine li:first-child::before{top:50%}
+.spine li:last-child::before{bottom:50%}
+.spine .dot{position:relative;z-index:1;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;background:var(--surface);border:2px solid var(--maroon);color:var(--maroon)}
+.spine .dot.plane{border-color:var(--ocean);color:var(--ocean)}
+.spine .dot svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.spine .t{min-width:0}
+.spine .t b{display:block;font-size:15px;line-height:1.25}
+.spine .t span{font-size:12.5px;color:var(--muted)}
+.spine .n{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
+.spine .n b{display:block;font-size:13px;color:var(--ink)}
+.si{font-family:var(--f-display);font-weight:500;color:var(--gold);margin-left:4px}
+
+.flights{display:grid;gap:10px}
+.flight{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.flight .ap b{font-family:var(--f-display);font-size:30px;font-weight:800;line-height:1;display:block}
+.flight .ap span{font-size:12px;color:var(--muted)}
+.flight .ap.r{text-align:right}
+.flight .mid{display:flex;flex-direction:column;align-items:center;font-size:11px;color:var(--muted);gap:2px}
+.flight .mid svg{width:22px;height:22px;stroke:var(--ocean);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.flight-meta{display:flex;justify-content:space-between;gap:8px;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px}
+.flight-meta .mono{font-size:13px}
+
+.clocks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.clock{padding:12px}
+.clock b{display:block;font-family:var(--f-mono);font-size:26px;font-weight:500;line-height:1.1}
+.clock span{font-size:12px;color:var(--muted)}
+.clock.lk{background:var(--tea-soft);border-color:transparent}
+
+/* ---------- map ---------- */
+#mapView{overflow:hidden;display:flex;flex-direction:column}
+.map-wrap{position:relative;flex:1;min-height:0}
+#map{position:absolute;inset:0;background-color:var(--sea);
+  background-image:radial-gradient(circle at 25% 30%,rgba(255,255,255,.12) 0 1px,transparent 1.5px),radial-gradient(circle at 75% 70%,rgba(255,255,255,.1) 0 1px,transparent 1.5px);
+  background-size:22px 22px,22px 22px}
+.leaflet-container{font-family:var(--f-body);background-color:var(--sea)}
+path.island{fill:var(--island);fill-opacity:1;stroke:var(--island-edge);stroke-width:1.4}
+path.island-glow{fill:none;stroke:var(--surface);stroke-opacity:.55;stroke-width:9}
+path.route-road{stroke:var(--maroon);stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:.85}
+path.route-train{stroke:var(--ocean);stroke-width:3;fill:none;stroke-dasharray:2 7;stroke-linecap:round}
+path.route-air{stroke:var(--muted);stroke-width:1.6;fill:none;stroke-dasharray:4 5}
+
+.map-top{position:absolute;top:10px;left:10px;right:10px;z-index:700;display:flex;gap:6px;flex-wrap:wrap;pointer-events:none}
+.chip{pointer-events:auto;appearance:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 11px;font-size:12.5px;font-weight:600;cursor:pointer;box-shadow:var(--shadow);display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.chip[aria-pressed="false"]{opacity:.55;box-shadow:none}
+.chip.fit{margin-left:auto}
+
+.pin{width:34px;height:34px;border-radius:50% 50% 50% 4px;transform:rotate(-45deg);background:var(--maroon);border:2.5px solid var(--gold);box-shadow:0 3px 8px rgba(0,0,0,.3);display:grid;place-items:center;transition:transform .2s}
+.pin span{transform:rotate(45deg);color:var(--maroon-ink);font-weight:800;font-size:14px;font-family:var(--f-body)}
+.pin.on{transform:rotate(-45deg) scale(1.28);background:var(--gold);border-color:var(--maroon)}
+.pin.on span{color:var(--maroon)}
+.pin-air{width:28px;height:28px;border-radius:50%;background:var(--surface);border:2px solid var(--ocean);display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.pin-air svg{width:15px;height:15px;stroke:var(--ocean);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.poi{width:14px;height:14px;transform:rotate(45deg);background:var(--tea);border:2px solid var(--surface);box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.poi.train{background:var(--ocean)}
+.region-lbl{font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--island-edge);white-space:nowrap;text-align:center;opacity:.95}
+.leaflet-div-icon{background:none;border:0}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.leaflet-popup-content-wrapper{border-radius:12px}
+.leaflet-popup-content{margin:10px 12px;font-size:13px;line-height:1.4}
+.leaflet-popup-content b{font-size:14px}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+
+.carousel{position:absolute;left:0;right:0;bottom:10px;z-index:700;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 6px;scrollbar-width:none}
+.carousel::-webkit-scrollbar{display:none}
+.hcard{flex:0 0 84%;scroll-snap-align:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);cursor:pointer;min-width:0}
+.hcard.on{border-color:var(--maroon)}
+.hcard .top{display:flex;gap:10px;align-items:center}
+.hcard .no{flex:none;width:28px;height:28px;border-radius:50%;background:var(--maroon);color:var(--maroon-ink);display:grid;place-items:center;font-weight:800;font-size:13px}
+.hcard .no.air{background:var(--ocean)}
+.hcard h3{font-size:19px;line-height:1.1}
+.hcard .sub{font-size:12.5px;color:var(--muted)}
+.hcard .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12.5px}
+.hcard .meta b{font-weight:700}
+.hcard .go{margin-top:8px;display:flex;gap:14px;font-size:13px;font-weight:700}
+.hcard .go a,.hcard .go button{color:var(--maroon);text-decoration:none;background:none;border:0;padding:0;cursor:pointer;font-weight:700}
+
+/* ---------- days ---------- */
+.daystrip{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:6px;overflow-x:auto;padding:12px 16px 10px;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.daystrip::-webkit-scrollbar{display:none}
+.dchip{flex:none;appearance:none;border:1px solid var(--line);background:var(--surface);border-radius:12px;width:48px;padding:5px 0;text-align:center;cursor:pointer;line-height:1.1}
+.dchip b{display:block;font-family:var(--f-display);font-size:20px;font-weight:800}
+.dchip span{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.dchip.hl{background:var(--maroon);border-color:var(--maroon);color:var(--maroon-ink)}
+.dchip.hl span{color:var(--gold)}
+.dchip.move{border-color:var(--gold)}
+
+.day{margin-top:14px;scroll-margin-top:84px}
+.day-head{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:start}
+.dbadge{text-align:center;border-radius:14px;background:var(--surface);border:1px solid var(--line);padding:6px 0 7px}
+.dbadge .wd{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.dbadge b{display:block;font-family:var(--f-display);font-size:28px;line-height:1;font-weight:800}
+.dbadge .mo{font-size:11px;color:var(--muted)}
+.day.is-today .dbadge{background:var(--maroon);border-color:var(--maroon);color:var(--maroon-ink)}
+.day.is-today .dbadge .wd,.day.is-today .dbadge .mo{color:var(--gold)}
+.day-title{min-width:0}
+.day-title .eyebrow{color:var(--maroon)}
+.day-title h3{font-size:22px;font-weight:700;margin-top:2px}
+.day-title .route{font-size:13px;color:var(--muted);margin-top:3px;display:flex;gap:6px 12px;flex-wrap:wrap}
+.day-title .route b{color:var(--ink);font-weight:600}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
+.tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--muted);letter-spacing:.02em}
+.tag.Kultur{background:color-mix(in srgb,var(--maroon) 14%,transparent);color:var(--maroon)}
+.tag.Wildlife{background:var(--gold-soft);color:var(--warn)}
+.tag.Natur,.tag.Wandern{background:var(--tea-soft);color:var(--tea)}
+.tag.Relax{background:var(--ocean-soft);color:var(--ocean)}
+.tag.Zug,.tag.Flug{background:var(--ocean-soft);color:var(--ocean)}
+.day-body{margin:10px 0 0 68px;display:grid;gap:10px}
+.intro{margin:0;font-size:14.5px}
+.sched{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.sched li{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:5px 0 5px 12px;font-size:14px;position:relative}
+.sched li::before{content:"";position:absolute;left:-5px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.sched .when{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}
+.note{border-radius:12px;padding:10px 12px;font-size:13.5px;display:grid;grid-template-columns:18px 1fr;gap:8px;align-items:start}
+.note svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+.note.tip{background:var(--tea-soft)}
+.note.tip svg{color:var(--tea)}
+.note.warn{background:var(--warn-soft)}
+.note.warn svg{color:var(--warn)}
+.note.alt{background:var(--surface-2)}
+.note b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1px}
+.note p{margin:0}
+.note ul{margin:4px 0 0;padding-left:18px}
+.hotel-line{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:9px 12px;font-size:13.5px;cursor:pointer;text-align:left;width:100%;appearance:none}
+.hotel-line svg{flex:none;width:18px;height:18px;stroke:var(--maroon);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.hotel-line span{flex:1;min-width:0}
+.hotel-line b{font-weight:700}
+.hotel-line em{font-style:normal;color:var(--maroon);font-weight:700;font-size:12.5px;white-space:nowrap}
+.extlink{font-size:13px;font-weight:700}
+.divider{height:1px;background:var(--line);margin:18px 0 0 68px}
+
+/* ---------- hotels ---------- */
+.hotel{margin-top:14px;padding:0;overflow:hidden}
+.hotel .hh{padding:14px 14px 12px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.hotel .no{width:38px;height:38px;border-radius:50%;background:var(--maroon);color:var(--maroon-ink);display:grid;place-items:center;font-family:var(--f-display);font-size:20px;font-weight:800;box-shadow:0 0 0 3px var(--gold-soft)}
+.hotel h3{font-size:22px}
+.hotel .reg{font-size:13px;color:var(--muted)}
+.hotel .stay{display:grid;grid-template-columns:1fr auto 1fr;gap:6px;align-items:center;padding:10px 14px;background:var(--surface-2);font-size:13px}
+.hotel .stay .r{text-align:right}
+.hotel .stay b{display:block;font-size:15px}
+.hotel .stay .nn{text-align:center;font-weight:700;color:var(--maroon);font-size:12px;line-height:1.2}
+.hotel .stay .nn b{font-family:var(--f-display);font-size:24px;color:var(--maroon)}
+.nightbar{display:flex;gap:2px;padding:10px 14px 0}
+.nightbar i{flex:1;height:6px;border-radius:2px;background:var(--line)}
+.nightbar i.on{background:var(--gold)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;padding:10px 14px 4px;font-size:13.5px}
+.facts div{min-width:0}
+.facts span{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.facts .full{grid-column:1/-1}
+.hotel .acts{display:flex;gap:16px;padding:10px 14px 14px;font-size:13.5px;font-weight:700;flex-wrap:wrap}
+.hotel .acts a,.hotel .acts button{color:var(--maroon);text-decoration:none;background:none;border:0;padding:0;cursor:pointer;font-weight:700}
+.rating{color:var(--warn);font-weight:700}
+
+/* ---------- more ---------- */
+.budget-total{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.budget-total b{font-family:var(--f-display);font-size:38px;font-weight:800;line-height:1}
+.budget-total span{font-size:13px;color:var(--muted);text-align:right}
+.stack{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:12px 0 10px;gap:2px}
+.stack i{display:block;height:100%}
+.blist{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.blist li{display:grid;grid-template-columns:12px 1fr auto auto;gap:10px;align-items:center;font-size:13.5px}
+.blist .sw{width:12px;height:12px;border-radius:3px}
+.blist .st{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.blist .v{font-variant-numeric:tabular-nums;font-weight:700;text-align:right;min-width:62px}
+
+.todo{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.todo label{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 12px;cursor:pointer}
+.todo input{appearance:none;width:22px;height:22px;border:2px solid var(--maroon);border-radius:7px;margin:1px 0 0;display:grid;place-items:center;cursor:pointer;background:var(--surface)}
+.todo input:checked{background:var(--maroon)}
+.todo input:checked::after{content:"";width:6px;height:11px;border:solid var(--maroon-ink);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.todo b{display:block;font-size:14px;line-height:1.3}
+.todo small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.todo .when{display:inline-block;margin-top:5px;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--gold-soft);color:var(--warn)}
+.todo .when.opt{background:var(--surface-2);color:var(--muted)}
+.todo input:checked ~ div b{text-decoration:line-through;color:var(--muted)}
+.foot{font-size:12px;color:var(--muted);margin-top:8px}
+
+.tlist{list-style:none;margin:0;padding:0}
+.tlist li{display:grid;grid-template-columns:52px 1fr auto;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px;align-items:start}
+.tlist li:last-child{border-bottom:0}
+.tlist .d{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px}
+.tlist b{font-weight:600;display:block}
+.tlist small{color:var(--muted);font-size:12.5px}
+.tlist .h{font-family:var(--f-mono);font-size:12px;white-space:nowrap;text-align:right;padding-top:2px}
+
+.infos{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.info{padding:12px}
+.info span{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.info b{display:block;font-size:17px;margin-top:2px}
+.info small{font-size:12px;color:var(--muted)}
+.info.full{grid-column:1/-1}
+
+.page-h{padding:18px 16px 4px}
+.page-h h1{font-size:34px;font-weight:800}
+.page-h p{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<div class="app">
+  <div class="views">
+
+    <!-- ===== Übersicht ===== -->
+    <section class="view" id="homeView" data-view="home">
+      <div class="hero">
+        <div class="ayubowan">ආයුබෝවන් <small>Ayubowan</small></div>
+        <h1>Sri Lanka <span>26/27</span></h1>
+        <div class="dates">30. Dezember 2026 – 16. Januar 2027 · 2 Personen</div>
+        <div class="count" id="count"></div>
+      </div>
+      <div class="band" aria-hidden="true"></div>
+      <div class="pad">
+        <div class="card today" id="todayCard"></div>
+        <div class="stats">
+          <div class="stat"><b>17</b><span>Tage</span></div>
+          <div class="stat"><b>7</b><span>Hotels</span></div>
+          <div class="stat"><b>16</b><span>Nächte</span></div>
+          <div class="stat"><b>8</b><span>Transfers</span></div>
+        </div>
+
+        <div class="section-h"><h2>Route</h2><span class="aside">Natur, Wildlife, Kultur &amp; Erholung</span></div>
+        <ul class="spine" id="spine"></ul>
+
+        <div class="section-h"><h2>Flüge</h2><span class="aside">SWISS Direktflug</span></div>
+        <div class="flights">
+          <div class="card">
+            <div class="eyebrow">Hinflug · Nachtflug</div>
+            <div class="flight" style="margin-top:8px">
+              <div class="ap"><b>ZRH</b><span>Zürich · 30.12.</span></div>
+              <div class="mid"><svg viewBox="0 0 24 24"><path d="M2 16l20-6M14 4l4 8-4 8"/></svg></div>
+              <div class="ap r"><b>CMB</b><span>Colombo · 31.12.</span></div>
+            </div>
+            <div class="flight-meta"><span>Landung Colombo</span><span class="mono">Do 31.12. · 08:00</span></div>
+          </div>
+          <div class="card">
+            <div class="eyebrow">Rückflug</div>
+            <div class="flight" style="margin-top:8px">
+              <div class="ap"><b>CMB</b><span>Colombo · 11:40</span></div>
+              <div class="mid"><svg viewBox="0 0 24 24"><path d="M2 16l20-6M14 4l4 8-4 8"/></svg></div>
+              <div class="ap r"><b>ZRH</b><span>Zürich · 17:50</span></div>
+            </div>
+            <div class="flight-meta"><span>Sa 16.01. · Abfahrt Hotel</span><span class="mono">07:45</span></div>
+          </div>
+        </div>
+
+        <div class="section-h"><h2>Uhrzeit</h2><span class="aside">Sri Lanka ist 4½ h voraus</span></div>
+        <div class="clocks">
+          <div class="card clock"><b id="clkZh">--:--</b><span>Zürich</span></div>
+          <div class="card clock lk"><b id="clkLk">--:--</b><span>Colombo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Karte ===== -->
+    <section class="view" id="mapView" data-view="karte" hidden>
+      <div class="map-wrap">
+        <div id="map" role="application" aria-label="Karte der Reiseroute"></div>
+        <div class="map-top">
+          <button class="chip" id="tgRoute" aria-pressed="true"><i style="background:var(--maroon)"></i>Route</button>
+          <button class="chip" id="tgPoi" aria-pressed="true"><i style="background:var(--tea)"></i>Ausflüge</button>
+          <button class="chip fit" id="fitAll">Alles zeigen</button>
+        </div>
+        <div class="carousel" id="carousel"></div>
+      </div>
+    </section>
+
+    <!-- ===== Tagesplan ===== -->
+    <section class="view" id="daysView" data-view="tage" hidden>
+      <div class="daystrip" id="daystrip"></div>
+      <div class="pad" id="days"></div>
+    </section>
+
+    <!-- ===== Hotels ===== -->
+    <section class="view" id="hotelsView" data-view="hotels" hidden>
+      <div class="page-h"><h1>Hotels</h1><p>7 Unterkünfte · 16 Nächte · CHF 7’269</p></div>
+      <div class="pad" id="hotels"></div>
+    </section>
+
+    <!-- ===== Mehr ===== -->
+    <section class="view" id="moreView" data-view="mehr" hidden>
+      <div class="page-h"><h1>Planung</h1><p>Budget, offene Punkte und Transfers</p></div>
+      <div class="pad">
+        <div class="section-h"><h2>Budget</h2><span class="aside">Planungskurs USD/CHF 0.80</span></div>
+        <div class="card" id="budget"></div>
+
+        <div class="section-h"><h2>Noch zu klären</h2><span class="aside" id="todoCount"></span></div>
+        <ul class="todo" id="todos"></ul>
+        <p class="foot">Häkchen werden nur auf diesem Gerät gespeichert.</p>
+
+        <div class="section-h"><h2>Transfers</h2><span class="aside">Fahrer ideal 31.12.–10.01.</span></div>
+        <div class="card" style="padding-block:4px"><ul class="tlist" id="transfers"></ul></div>
+
+        <div class="section-h"><h2>Gut zu wissen</h2></div>
+        <div class="infos">
+          <div class="card info"><span>Zeit</span><b>+4½ h</b><small>gegenüber Zürich (Winterzeit)</small></div>
+          <div class="card info"><span>Notruf</span><b class="mono">119</b><small>Polizei · Ambulanz 1990</small></div>
+          <div class="card info"><span>Strom</span><b>230 V</b><small>Stecker Typ D und G, Adapter mitnehmen</small></div>
+          <div class="card info"><span>Meer</span><b>Strömung</b><small>Südküste: Hotelpersonal fragen</small></div>
+          <div class="card info full"><span>Hochland-Zug 05.01.</span><b style="font-size:15px">Sitzplatzreservierung Sri Lanka Railways</b>
+            <small>Fahrplan und Streckenstatus im Nov/Dez 2026 prüfen.</small><br>
+            <a class="extlink" href="https://seatreservation.railway.gov.lk" target="_blank" rel="noopener">seatreservation.railway.gov.lk ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <nav class="tabbar" role="tablist" aria-label="Bereiche">
+    <button class="tab" role="tab" data-go="home" aria-selected="true"><svg viewBox="0 0 24 24"><path d="M12 3c-3 4-3 8 0 11 3-3 3-7 0-11z"/><path d="M12 14c-4-1-7 0-9 2 3 2 6 2 9-2zM12 14c4-1 7 0 9 2-3 2-6 2-9-2z"/><path d="M12 14v7"/></svg>Reise</button>
+    <button class="tab" role="tab" data-go="karte" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>Karte</button>
+    <button class="tab" role="tab" data-go="tage" aria-selected="false"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Tage</button>
+    <button class="tab" role="tab" data-go="hotels" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M3 20V8l9-5 9 5v12"/><path d="M3 20h18M9 20v-6h6v6"/></svg>Hotels</button>
+    <button class="tab" role="tab" data-go="mehr" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg>Planung</button>
+  </nav>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const LK_OUTLINE = [[[7.093,81.877],[7.076,81.877],[7.04,81.888],[7.02,81.892],[6.979,81.885],[6.821,81.838],[6.806,81.834],[6.784,81.834],[6.765,81.831],[6.738,81.816],[6.724,81.813],[6.708,81.809],[6.677,81.787],[6.664,81.78],[6.64,81.787],[6.61,81.777],[6.463,81.683],[6.431,81.651],[6.39,81.593],[6.383,81.571],[6.37,81.546],[6.225,81.363],[6.206,81.327],[6.162,81.204],[6.177,81.204],[6.184,81.197],[6.182,81.193],[6.181,81.186],[6.174,81.183],[6.157,81.183],[6.15,81.175],[6.149,81.168],[6.144,81.157],[6.13,81.136],[6.12,81.114],[6.098,81.01],[6.081,80.959],[6.071,80.902],[6.061,80.877],[6.041,80.862],[6.046,80.837],[6.039,80.819],[6.036,80.808],[6.007,80.772],[5.978,80.733],[5.958,80.715],[5.96,80.675],[5.958,80.657],[5.953,80.643],[5.944,80.628],[5.927,80.607],[5.926,80.599],[5.924,80.592],[5.931,80.574],[5.939,80.556],[5.943,80.545],[5.944,80.538],[5.938,80.481],[5.941,80.466],[5.949,80.455],[5.96,80.452],[5.966,80.448],[5.971,80.445],[5.961,80.427],[5.96,80.412],[5.965,80.383],[5.965,80.38],[5.966,80.373],[5.971,80.369],[5.976,80.365],[5.978,80.358],[5.976,80.355],[5.973,80.351],[5.971,80.347],[5.971,80.34],[5.973,80.34],[5.973,80.337],[5.983,80.333],[5.985,80.329],[5.985,80.326],[5.988,80.319],[6.003,80.279],[6.007,80.261],[6.009,80.247],[6.027,80.225],[6.029,80.221],[6.034,80.211],[6.025,80.203],[6.041,80.185],[6.127,80.103],[6.132,80.095],[6.133,80.095],[6.137,80.095],[6.14,80.092],[6.149,80.092],[6.154,80.092],[6.157,80.088],[6.169,80.077],[6.267,80.031],[6.275,80.031],[6.284,80.031],[6.292,80.031],[6.297,80.031],[6.314,80.02],[6.361,80.013],[6.394,79.995],[6.441,79.984],[6.458,79.977],[6.459,79.977],[6.463,79.973],[6.466,79.966],[6.471,79.966],[6.478,79.966],[6.48,79.969],[6.478,79.977],[6.532,79.969],[6.535,79.969],[6.589,79.948],[6.807,79.861],[6.883,79.851],[6.89,79.847],[6.963,79.847],[6.964,79.851],[6.988,79.858],[7,79.861],[7.012,79.861],[7.18,79.815],[7.206,79.822],[7.191,79.818],[7.18,79.825],[7.174,79.829],[7.165,79.833],[7.131,79.843],[7.123,79.847],[7.123,79.854],[7.133,79.854],[7.136,79.858],[7.136,79.861],[7.167,79.861],[7.18,79.858],[7.192,79.854],[7.196,79.851],[7.197,79.836],[7.202,79.829],[7.204,79.829],[7.211,79.825],[7.218,79.829],[7.226,79.833],[7.233,79.833],[7.589,79.786],[7.603,79.779],[7.608,79.782],[7.608,79.786],[7.603,79.793],[7.619,79.793],[7.64,79.8],[7.65,79.8],[7.66,79.804],[7.675,79.797],[7.689,79.789],[7.697,79.786],[7.707,79.786],[7.743,79.786],[7.856,79.764],[7.868,79.761],[7.893,79.75],[7.945,79.739],[7.986,79.721],[8.099,79.696],[8.131,79.696],[8.128,79.699],[8.128,79.703],[8.124,79.703],[8.143,79.707],[8.202,79.703],[8.219,79.696],[8.229,79.714],[8.249,79.728],[8.273,79.739],[8.291,79.746],[8.303,79.75],[8.351,79.779],[8.349,79.779],[8.315,79.764],[8.281,79.746],[8.273,79.75],[8.271,79.75],[8.264,79.757],[8.259,79.768],[8.259,79.779],[8.232,79.768],[8.212,79.761],[8.209,79.753],[8.209,79.75],[8.205,79.746],[8.195,79.746],[8.172,79.746],[8.165,79.746],[8.111,79.728],[8.101,79.728],[8.08,79.728],[8.06,79.746],[8.055,79.753],[8.013,79.732],[7.991,79.764],[7.986,79.811],[8.003,79.833],[8.021,79.829],[8.035,79.822],[8.04,79.818],[8.045,79.815],[8.055,79.807],[8.062,79.797],[8.074,79.793],[8.136,79.825],[8.148,79.825],[8.156,79.822],[8.163,79.818],[8.172,79.815],[8.183,79.811],[8.204,79.815],[8.212,79.815],[8.214,79.815],[8.222,79.811],[8.224,79.807],[8.226,79.807],[8.229,79.804],[8.241,79.807],[8.249,79.811],[8.266,79.825],[8.278,79.825],[8.298,79.829],[8.34,79.84],[8.438,79.847],[8.449,79.854],[8.455,79.861],[8.462,79.865],[8.476,79.869],[8.518,79.869],[8.538,79.872],[8.552,79.887],[8.562,79.905],[8.575,79.915],[8.58,79.919],[8.612,79.93],[8.614,79.93],[8.622,79.933],[8.643,79.941],[8.741,79.951],[8.801,79.926],[8.813,79.93],[8.884,79.93],[8.908,79.926],[8.92,79.926],[8.928,79.919],[8.938,79.915],[8.943,79.926],[8.947,79.937],[8.948,79.948],[9.001,80.005],[9.016,80.034],[9.026,80.049],[9.051,80.056],[9.075,80.067],[9.11,80.074],[9.193,80.106],[9.198,80.106],[9.21,80.11],[9.234,80.117],[9.291,80.117],[9.301,80.117],[9.306,80.117],[9.308,80.106],[9.323,80.077],[9.333,80.067],[9.352,80.059],[9.355,80.059],[9.379,80.052],[9.391,80.052],[9.404,80.067],[9.414,80.088],[9.423,80.113],[9.426,80.131],[9.43,80.142],[9.46,80.164],[9.462,80.164],[9.463,80.167],[9.468,80.178],[9.472,80.185],[9.473,80.196],[9.49,80.189],[9.499,80.182],[9.506,80.175],[9.521,80.16],[9.534,80.142],[9.578,80.067],[9.597,80.052],[9.595,80.085],[9.583,80.117],[9.548,80.175],[9.534,80.232],[9.524,80.25],[9.504,80.272],[9.494,80.279],[9.487,80.265],[9.48,80.268],[9.473,80.272],[9.467,80.265],[9.453,80.286],[9.465,80.337],[9.5,80.427],[9.497,80.452],[9.484,80.506],[9.455,80.567],[9.446,80.614],[9.492,80.545],[9.504,80.524],[9.507,80.502],[9.509,80.499],[9.511,80.495],[9.524,80.477],[9.528,80.47],[9.529,80.466],[9.529,80.455],[9.528,80.445],[9.526,80.437],[9.524,80.434],[9.519,80.434],[9.517,80.43],[9.528,80.416],[9.529,80.412],[9.528,80.376],[9.531,80.369],[9.592,80.297],[9.61,80.268],[9.615,80.257],[9.637,80.203],[9.649,80.185],[9.649,80.175],[9.624,80.175],[9.617,80.182],[9.609,80.193],[9.598,80.2],[9.587,80.193],[9.585,80.185],[9.588,80.178],[9.593,80.171],[9.603,80.153],[9.636,80.117],[9.644,80.095],[9.632,80.106],[9.615,80.124],[9.603,80.135],[9.609,80.11],[9.619,80.088],[9.644,80.038],[9.674,80.002],[9.683,79.977],[9.685,79.977],[9.69,79.966],[9.693,79.959],[9.686,79.959],[9.693,79.948],[9.703,79.944],[9.715,79.941],[9.727,79.937],[9.739,79.93],[9.744,79.926],[9.757,79.915],[9.769,79.908],[9.779,79.93],[9.815,79.969],[9.823,79.987],[9.816,80.067],[9.821,80.106],[9.82,80.121],[9.806,80.128],[9.784,80.128],[9.777,80.131],[9.774,80.139],[9.774,80.146],[9.767,80.171],[9.764,80.175],[9.755,80.182],[9.755,80.193],[9.759,80.2],[9.761,80.203],[9.761,80.207],[9.761,80.211],[9.757,80.218],[9.754,80.221],[9.725,80.25],[9.629,80.34],[9.61,80.369],[9.576,80.441],[9.576,80.445],[9.583,80.445],[9.602,80.409],[9.673,80.319],[9.755,80.247],[9.774,80.211],[9.788,80.153],[9.799,80.139],[9.815,80.135],[9.823,80.157],[9.825,80.164],[9.828,80.185],[9.83,80.229],[9.826,80.247],[9.816,80.261],[9.784,80.268],[9.771,80.279],[9.617,80.409],[9.603,80.43],[9.582,80.47],[9.36,80.743],[9.359,80.747],[9.347,80.754],[9.332,80.765],[9.313,80.787],[9.294,80.797],[9.288,80.787],[9.291,80.779],[9.293,80.779],[9.305,80.769],[9.308,80.761],[9.311,80.743],[9.31,80.736],[9.301,80.74],[9.298,80.743],[9.251,80.794],[9.239,80.815],[9.252,80.805],[9.264,80.801],[9.271,80.805],[9.274,80.819],[9.271,80.823],[9.239,80.833],[9.22,80.844],[9.146,80.884],[9.148,80.873],[9.156,80.855],[9.156,80.841],[9.143,80.833],[9.137,80.841],[9.136,80.859],[9.126,80.873],[9.104,80.877],[9.104,80.884],[9.109,80.884],[9.112,80.887],[9.114,80.891],[9.117,80.898],[9.097,80.902],[9.094,80.902],[9.061,80.916],[9.033,80.934],[9.021,80.956],[9.019,80.956],[9.018,80.959],[9.011,80.959],[9.004,80.952],[9.001,80.945],[9.004,80.941],[9.021,80.931],[9.028,80.92],[9.034,80.891],[9.041,80.877],[9.031,80.884],[9.026,80.887],[8.992,80.923],[8.974,80.923],[8.965,80.934],[8.955,80.923],[8.943,80.916],[8.931,80.931],[8.933,80.949],[8.945,80.963],[8.964,80.97],[8.98,80.977],[8.937,81.013],[8.882,81.046],[8.869,81.06],[8.864,81.078],[8.852,81.093],[8.8,81.114],[8.795,81.121],[8.788,81.125],[8.778,81.15],[8.751,81.161],[8.698,81.175],[8.709,81.179],[8.712,81.183],[8.71,81.186],[8.705,81.197],[8.697,81.193],[8.666,81.222],[8.651,81.233],[8.633,81.233],[8.626,81.226],[8.621,81.215],[8.611,81.204],[8.612,81.211],[8.614,81.219],[8.616,81.222],[8.617,81.226],[8.57,81.247],[8.546,81.251],[8.541,81.226],[8.558,81.229],[8.57,81.222],[8.573,81.211],[8.555,81.204],[8.541,81.208],[8.533,81.215],[8.523,81.219],[8.508,81.211],[8.511,81.204],[8.519,81.193],[8.531,81.175],[8.535,81.157],[8.528,81.143],[8.511,81.129],[8.501,81.132],[8.504,81.15],[8.521,81.172],[8.506,81.186],[8.487,81.197],[8.472,81.211],[8.465,81.237],[8.467,81.28],[8.477,81.298],[8.501,81.287],[8.513,81.312],[8.516,81.323],[8.514,81.334],[8.508,81.345],[8.496,81.359],[8.482,81.366],[8.442,81.373],[8.391,81.388],[8.378,81.388],[8.364,81.388],[8.373,81.377],[8.4,81.363],[8.405,81.352],[8.398,81.352],[8.366,81.355],[8.362,81.355],[8.351,81.363],[8.347,81.37],[8.344,81.373],[8.344,81.388],[8.339,81.399],[8.302,81.406],[8.275,81.413],[8.27,81.413],[8.254,81.417],[8.244,81.42],[8.173,81.442],[8.128,81.449],[8.102,81.431],[8.145,81.42],[8.15,81.42],[8.192,81.402],[8.192,81.395],[8.16,81.395],[8.15,81.395],[8.148,81.395],[8.143,81.395],[8.136,81.395],[8.133,81.399],[8.129,81.409],[8.128,81.409],[8.106,81.417],[8.094,81.435],[8.094,81.453],[8.116,81.46],[8.116,81.463],[8.104,81.471],[8.101,81.474],[8.065,81.481],[8.052,81.489],[8.04,81.499],[8.028,81.507],[7.999,81.521],[8.004,81.525],[8.009,81.532],[8.013,81.535],[8.004,81.539],[7.999,81.535],[7.996,81.535],[7.993,81.539],[7.991,81.539],[7.986,81.539],[7.991,81.546],[7.996,81.557],[7.999,81.561],[7.994,81.564],[7.988,81.564],[7.979,81.564],[7.971,81.561],[7.964,81.561],[7.959,81.561],[7.945,81.568],[7.935,81.579],[7.93,81.589],[7.917,81.597],[7.917,81.589],[7.915,81.589],[7.913,81.586],[7.912,81.582],[7.9,81.579],[7.89,81.575],[7.856,81.586],[7.847,81.593],[7.832,81.607],[7.836,81.629],[7.836,81.636],[7.815,81.643],[7.802,81.651],[7.798,81.654],[7.753,81.697],[7.731,81.712],[7.712,81.712],[7.706,81.69],[7.712,81.679],[7.743,81.658],[7.755,81.643],[7.76,81.625],[7.76,81.615],[7.748,81.604],[7.726,81.597],[7.721,81.607],[7.719,81.618],[7.722,81.629],[7.733,81.636],[7.729,81.647],[7.724,81.658],[7.719,81.661],[7.716,81.665],[7.706,81.665],[7.692,81.676],[7.68,81.69],[7.668,81.701],[7.65,81.712],[7.645,81.705],[7.64,81.705],[7.631,81.708],[7.623,81.712],[7.63,81.719],[7.643,81.715],[7.64,81.726],[7.623,81.748],[7.614,81.755],[7.569,81.773],[7.565,81.773],[7.54,81.766],[7.538,81.766],[7.537,81.766],[7.528,81.773],[7.523,81.773],[7.516,81.769],[7.511,81.762],[7.505,81.759],[7.496,81.762],[7.489,81.766],[7.484,81.769],[7.479,81.773],[7.473,81.78],[7.464,81.769],[7.461,81.769],[7.457,81.769],[7.456,81.78],[7.466,81.787],[7.466,81.795],[7.425,81.802],[7.41,81.802],[7.41,81.809],[7.425,81.809],[7.439,81.813],[7.451,81.816],[7.459,81.82],[7.466,81.82],[7.467,81.82],[7.474,81.82],[7.476,81.82],[7.474,81.827],[7.466,81.834],[7.457,81.838],[7.437,81.841],[7.412,81.856],[7.327,81.881],[7.093,81.877]],[[7.66,81.737],[7.672,81.737],[7.679,81.733],[7.689,81.73],[7.699,81.726],[7.709,81.726],[7.719,81.73],[7.727,81.73],[7.739,81.726],[7.727,81.737],[7.699,81.751],[7.685,81.759],[7.68,81.762],[7.655,81.769],[7.616,81.795],[7.599,81.805],[7.511,81.823],[7.491,81.823],[7.479,81.809],[7.489,81.795],[7.494,81.791],[7.496,81.787],[7.501,81.787],[7.506,81.787],[7.508,81.787],[7.572,81.791],[7.594,81.787],[7.603,81.777],[7.611,81.773],[7.66,81.737]],[[9.075,79.714],[9.08,79.703],[9.09,79.699],[9.099,79.699],[9.104,79.714],[9.104,79.761],[9.099,79.779],[9.094,79.8],[9.077,79.843],[9.053,79.883],[9.021,79.915],[9.024,79.901],[9.038,79.872],[9.041,79.854],[9.012,79.879],[8.989,79.901],[8.974,79.908],[8.977,79.887],[8.989,79.869],[9.001,79.858],[9.007,79.851],[9.012,79.84],[9.05,79.8],[9.058,79.779],[9.067,79.761],[9.072,79.743],[9.073,79.735],[9.075,79.714]],[[9.5,79.732],[9.492,79.725],[9.485,79.714],[9.484,79.689],[9.492,79.667],[9.504,79.656],[9.544,79.656],[9.555,79.66],[9.555,79.667],[9.546,79.671],[9.534,79.678],[9.529,79.692],[9.528,79.714],[9.524,79.721],[9.5,79.732]],[[9.617,79.897],[9.629,79.879],[9.651,79.865],[9.7,79.84],[9.717,79.851],[9.739,79.854],[9.755,79.861],[9.761,79.883],[9.757,79.894],[9.749,79.894],[9.737,79.89],[9.723,79.89],[9.71,79.89],[9.7,79.89],[9.698,79.89],[9.696,79.89],[9.688,79.894],[9.683,79.901],[9.679,79.905],[9.678,79.908],[9.679,79.926],[9.676,79.93],[9.661,79.93],[9.654,79.933],[9.647,79.944],[9.641,79.962],[9.634,79.973],[9.632,79.973],[9.624,79.977],[9.617,79.969],[9.617,79.959],[9.622,79.944],[9.627,79.933],[9.629,79.926],[9.619,79.908],[9.617,79.897]]];
+
+/* ---------------- data ---------------- */
+const HOTELS = [
+  {id:'vil', no:1, name:'Jetwing Vil Uyana', region:'Sigiriya', si:'සීගිරිය', ll:[7.9468,80.7378], in:'2026-12-31', out:'2027-01-03', n:3, chf:1973, room:'Gebucht · Silvesteraufenthalt', meals:'Silvesterdinner beim Hotel bestätigen', rating:'4,8', kind:'Hotel', q:'Jetwing Vil Uyana Sigiriya'},
+  {id:'mad', no:2, name:'Madulkelle Tea and Eco Lodge', region:'Madulkelle · bei Kandy', si:'මහනුවර', ll:[7.3965,80.7305], in:'2027-01-03', out:'2027-01-05', n:2, chf:775, room:'Deluxe-Zelt mit Bergblick', meals:'Frühstück inklusive', rating:'4,5', kind:'Lodge', q:'Madulkelle Tea and Eco Lodge'},
+  {id:'ted', no:3, name:'Te Dalu Resort & Spa', region:'Ella', si:'ඇල්ල', ll:[6.8955,81.0405], in:'2027-01-05', out:'2027-01-08', n:3, chf:887, room:'Superior-Zimmer, Balkon mit Bergblick', meals:'—', rating:'4,7', kind:'Resort-Hotel', q:'Te Dalu Resort & Spa Ella'},
+  {id:'yal', no:4, name:'Cinnamon Wild Yala', region:'Yala', si:'යාල', ll:[6.2690,81.4010], in:'2027-01-08', out:'2027-01-10', n:2, chf:795, room:'Jungle Chalet', meals:'Frühstück + Abendessen inklusive', rating:null, kind:'Resort', q:'Cinnamon Wild Yala'},
+  {id:'ana', no:5, name:'Anantara Peace Haven Tangalle', region:'Tangalle · Südküste', si:'තංගල්ල', ll:[6.0062,80.7695], in:'2027-01-10', out:'2027-01-14', n:4, chf:2490, room:'Premier-Zimmer mit Strandzugang', meals:'Frühstück inklusive', rating:'4,8', kind:'Resort', q:'Anantara Peace Haven Tangalle Resort'},
+  {id:'arc', no:6, name:'The Archives Galle Fort', region:'Galle · Pedlar Street', si:'ගාල්ල', ll:[6.0270,80.2172], in:'2027-01-14', out:'2027-01-15', n:1, chf:166, room:'Suite im historischen Fort', meals:'Keine Mahlzeit inklusive', rating:'4,8', kind:'Boutique', q:'The Archives Galle Fort Pedlar Street'},
+  {id:'lag', no:7, name:'Jetwing Lagoon Wellness', region:'Negombo', si:'මීගමුව', ll:[7.1600,79.8380], in:'2027-01-15', out:'2027-01-16', n:1, chf:183, room:'Luxus-Doppelzimmer', meals:'Frühstück inklusive', rating:'4,5', kind:'Hotel', q:'Jetwing Lagoon Negombo'}
+];
+const AIRPORT = {id:'cmb', name:'Bandaranaike International Airport', region:'Colombo (CMB)', ll:[7.1808,79.8841], q:'Bandaranaike International Airport'};
+
+const POIS = [
+  {name:'Sigiriya Rock', ll:[7.9570,80.7603], day:'02.01.', txt:'Aufstieg 1–1,5 h, total 2,5–3 h. Um 07:00 starten.'},
+  {name:'Dambulla Cave Temple', ll:[7.8567,80.6492], day:'02.01.', txt:'Höhlentempel, ca. 1,5 h plus Anfahrt.'},
+  {name:'Elefantensafari Minneriya', ll:[8.0330,80.8600], day:'01.01.', txt:'Oder Kaudulla / Hurulu Eco Park – je nach Elefantenlage.'},
+  {name:'Zahntempel Kandy', ll:[7.2936,80.6413], day:'03.01.', txt:'Stopp auf dem Weg ins Hochland, Mittagessen in Kandy.'},
+  {name:'Bahnhof Nanu Oya', ll:[6.9431,80.7472], day:'05.01.', txt:'Einstieg in den Zug nach Ella (oder Ambewela).', train:true},
+  {name:'Nine Arch Bridge', ll:[6.8768,81.0608], day:'06.01.', txt:'1–1,5 h. Zugdurchfahrt lokal prüfen.'},
+  {name:'Little Adam’s Peak', ll:[6.8670,81.0600], day:'06.01.', txt:'Einfache Wanderung, 1–2 h.'},
+  {name:'Ravana Falls', ll:[6.8445,81.0525], day:'07.01. / 08.01.', txt:'Naturtag oder kurzer Halt auf dem Weg nach Yala.'},
+  {name:'Diyaluma Falls', ll:[6.7330,81.0290], day:'07.01. (Option)', txt:'Nur mit Guide und bei sicheren Bedingungen baden.'},
+  {name:'Yala-Nationalpark', ll:[6.3700,81.4500], day:'08.–09.01.', txt:'Safari am Nachmittag 08.01. und früh am 09.01.'},
+  {name:'Rekawa Beach', ll:[6.0470,80.8540], day:'12.01. (optional)', txt:'Schildkröten-Schutzprojekt. Kein Blitzlicht.'},
+  {name:'Mulkirigala Rock Temple', ll:[6.1236,80.7383], day:'13.01. (optional)', txt:'Felsentempel, Ausflug über das Anantara.'},
+  {name:'Galle Fort & Leuchtturm', ll:[6.0240,80.2193], day:'14.01.', txt:'Gassen, Festungsmauern, Sonnenuntergang.'}
+];
+
+/* road legs (approx.) and train leg */
+const LEGS_ROAD = [
+  [[7.1808,79.8841],[7.33,80.09],[7.4867,80.3647],[7.72,80.55],[7.8600,80.6500],[7.93,80.70],[7.9468,80.7378]],
+  [[7.9468,80.7378],[7.8600,80.6500],[7.4675,80.6234],[7.2936,80.6413],[7.33,80.70],[7.3965,80.7305]],
+  [[7.3965,80.7305],[7.33,80.70],[7.2936,80.6413],[7.16,80.57],[7.05,80.70],[6.97,80.77],[6.9431,80.7472]],
+  [[6.8955,81.0405],[6.8766,81.0460],[6.81,81.06],[6.735,81.10],[6.55,81.22],[6.2846,81.2873],[6.25,81.36],[6.2690,81.4010]],
+  [[6.2690,81.4010],[6.25,81.36],[6.2846,81.2873],[6.124,81.12],[6.06,80.95],[6.0062,80.7695]],
+  [[6.0062,80.7695],[5.97,80.62],[5.948,80.535],[5.947,80.457],[6.00,80.30],[6.0270,80.2172]],
+  [[6.0270,80.2172],[6.12,80.17],[6.40,80.08],[6.70,79.98],[6.93,79.87],[7.08,79.85],[7.1600,79.8380]]
+];
+const LEG_TRAIN = [[6.9431,80.7472],[6.857,80.83],[6.766,80.951],[6.8297,80.9895],[6.8766,81.0460],[6.8955,81.0405]];
+
+const REGIONS = [
+  {t:'Kulturelles Dreieck', ll:[8.25,80.55]},
+  {t:'Hochland', ll:[7.08,80.95]},
+  {t:'Südküste', ll:[5.86,80.55]}
+];
+
+const DAYS = [
+  {d:'2026-12-30', title:'Abflug in Zürich', route:'Zürich → Colombo', tags:['Flug'],
+    intro:'Nachtflug mit SWISS direkt nach Colombo.',
+    sched:[['Abends','Abflug Zürich']]},
+  {d:'2026-12-31', title:'Ankunft in Sri Lanka', route:'Flughafen Colombo → Sigiriya', drive:'3,5–4,5 h', hotel:'vil', tags:['Transfer','Relax'],
+    intro:'Ein privater Fahrer holt euch direkt am Flughafen ab. Die Zeiten sind bewusst grosszügig angesetzt.',
+    sched:[['08:00','Landung in Colombo'],['09:30–10:30','Einreise, Gepäck, Fahrer treffen'],['10:30','Abfahrt Richtung Sigiriya'],['14:30–15:30','Ankunft beim Hotel'],['Nachmittag','Einchecken, Pool und Erholung'],['Abend','Silvesteressen im Hotel']],
+    tip:'Am ersten Tag nichts mehr unternehmen. Nach dem Nachtflug den Silvesterabend im Hotel verbringen.',
+    warn:'Nach einem allfälligen obligatorischen Silvesterdinner fragen. Bei Luxushotels können Zusatzkosten anfallen.'},
+  {d:'2027-01-01', title:'Elefanten und Natur', route:'Sigiriya', drive:'Safari 3–4 h + Anfahrt', hotel:'vil', tags:['Wildlife'],
+    intro:'Den Neujahrstag entspannt beginnen.',
+    sched:[['Vormittag','Ausschlafen, ausgiebig frühstücken, Hotelanlage erkunden'],['Nachmittag','Elefantensafari in Minneriya, Kaudulla oder Hurulu Eco Park'],['Abend','Abendessen und Entspannung im Hotel']],
+    tip:'Den Park nicht Wochen im Voraus festlegen. Die Elefanten ziehen zwischen den Gebieten umher – Fahrer oder Safarianbieter klärt kurzfristig, wo die Chancen am besten sind.'},
+  {d:'2027-01-02', title:'Sigiriya Rock und Dambulla', route:'Sigiriya', drive:'kurze Transfers', hotel:'vil', tags:['Kultur'],
+    intro:'Eines der grossen Highlights Sri Lankas.',
+    sched:[['07:00','Sigiriya Rock – Aufstieg ca. 1–1,5 h, total 2,5–3 h mit Besichtigung und Abstieg'],['11:00','Zurück ins Hotel, Mittagessen und Pause am Pool'],['15:00','Dambulla Cave Temple – ca. 1,5 h plus Anfahrt']],
+    tip:'Früh starten: weniger Hitze, oft weniger Andrang. Pidurangala nicht zusätzlich einbauen – zwei grosse Aufstiege an einem Tag sind zu viel.',
+    alt:'Wer Sonnenaufgänge und Aussichtspunkte liebt, kann Sigiriya Rock mit Pidurangala tauschen.'},
+  {d:'2027-01-03', title:'Ins Teehochland', route:'Sigiriya → Kandy → Madulkelle', drive:'4–5,5 h + Stopps', hotel:'mad', tags:['Transfer','Kultur'],
+    intro:'Vom tropischen Tiefland ins grüne Hochland, mit Zwischenstopp in Kandy.',
+    sched:[['08:30','Abfahrt Sigiriya'],['Mittag','Ankunft in Kandy: Zahntempel besichtigen und essen'],['Nachmittag','Weiterfahrt nach Madulkelle'],['Ankunft','Keine Aktivitäten mehr – Aussicht geniessen']],
+    warn:'Die letzten Kilometer führen über kleine Bergstrassen. Unbedingt bei Tageslicht ankommen.'},
+  {d:'2027-01-04', title:'Mitten in den Teeplantagen', route:'Madulkelle', drive:'variabel', hotel:'mad', tags:['Natur','Relax'],
+    intro:'Ruhe, Natur und ein aussergewöhnliches Hotel – vielleicht einer der schönsten Naturtage der Reise.',
+    sched:[['Vormittag','Geführte Wanderung durch Teeplantagen und Wald'],['Mittag','Mittagessen im Hotel'],['Nachmittag','Pool, Spa oder Tee-Degustation'],['Abend','Abendessen mit Bergblick']],
+    tip:'Keinen Ausflug zurück nach Kandy planen. Die Lodge bietet Wanderungen, Tee-Degustationen, Teefabrik-Besuche und Kochkurse an.'},
+  {d:'2027-01-05', title:'Die berühmte Zugfahrt nach Ella', route:'Madulkelle → Nanu Oya → Ella', drive:'5–7 h Auto · Zug optional', hotel:'ted', tags:['Transfer','Zug'],
+    intro:'Der Tag, den es am sorgfältigsten zu organisieren gilt. Die Lodge liegt nicht an der Bahnstrecke.',
+    sched:[['Morgen','Privater Fahrer Richtung Nanu Oya bzw. Ambewela'],['Zug','Mit dem Zug durch die Teeplantagen nach Ella'],['Ankunft','Fahrer bringt das Gepäck separat und holt euch am Bahnhof Ella ab']],
+    warn:'Nach den schweren Schäden Ende 2025 war die Hochlandbahn 2026 zeitweise nur auf Teilabschnitten befahrbar. Fahrplan und Streckenstatus näher am Datum prüfen.',
+    alt:'Plan B: Fährt kein passender Zug, bringt euch der Fahrer direkt nach Ella – mit Stopps an Aussichtspunkten, Teeplantagen und einem Wasserfall. Auch ohne Zug landschaftlich wunderschön.',
+    link:['Sri Lanka Railways – Sitzplatzreservierung','https://seatreservation.railway.gov.lk']},
+  {d:'2027-01-06', title:'Nine Arch Bridge und Little Adam’s Peak', route:'Ella', drive:'kurze Transfers + Wanderung', hotel:'ted', tags:['Wandern'],
+    intro:'Die zwei bekanntesten Sehenswürdigkeiten rund um Ella kombiniert.',
+    sched:[['Vormittag','Nine Arch Bridge, ca. 1–1,5 h'],['Anschliessend','Little Adam’s Peak – einfache Wanderung, 1–2 h'],['Nachmittag','Zurück ins Hotel: Pool, Massage, Berglandschaft']],
+    tip:'Für ein Foto mit Zug auf der Brücke die aktuellen Durchfahrtszeiten vor Ort erfragen.'},
+  {d:'2027-01-07', title:'Wasserfälle rund um Ella', route:'Ella und Umgebung', drive:'variabel', hotel:'ted', tags:['Natur'],
+    intro:'Naturtag zum Abschluss in Ella. Empfehlung: Option B, wenn der Vortag schon viel war.',
+    sched:[['Option B','Ravana Falls, kleine Wanderung durch Teeplantagen, Aussichtspunkte, Mittagessen in einem schönen Café'],['Option A','Diyaluma Falls – spektakulär, mehrere Aussichtspunkte, braucht einen grossen Teil des Tages']],
+    warn:'Baden in natürlichen Becken ist nicht immer sicher: Strömung, Wasserstand, rutschige Felsen. Nur mit lokalem Guide und bei geeigneten Bedingungen.'},
+  {d:'2027-01-08', title:'Von Ella nach Yala', route:'Ella → Yala', drive:'2,5–3,5 h', hotel:'yal', tags:['Transfer','Wildlife'],
+    intro:'Raus aus den Bergen, hinunter zum Nationalpark.',
+    sched:[['09:00','Abfahrt in Ella'],['Unterwegs','Kurzer Halt bei den Ravana Falls, falls noch nicht gesehen'],['Mittag','Ankunft in der Yala-Region'],['Nachmittag','Erste Safari']],
+    tip:'Nachmittagssafari heute, zweite Safari am Morgen des 9. Januar – dann ist der Rest des Tages frei.'},
+  {d:'2027-01-09', title:'Safari im Yala-Nationalpark', route:'Yala National Park', drive:'Safari 3–4 h', hotel:'yal', tags:['Wildlife','Relax'],
+    intro:'Heute heisst es früh aufstehen.',
+    sched:[['05:00','Aufstehen – Abfahrt je nach Safari-Vereinbarung'],['Vormittag','Safari: Elefanten, Krokodile, Vögel und mit Glück Leoparden'],['Mittag','Zurück ins Hotel, Mittagessen, Pool']],
+    tip:'Eine dritte Safari ist nicht nötig. Eine Leopardensichtung ist nie garantiert.'},
+  {d:'2027-01-10', title:'An die Südküste', route:'Yala → Tangalle', drive:'2–3 h', hotel:'ana', tags:['Transfer','Relax'],
+    intro:'Jetzt beginnt der entspannte Teil der Reise.',
+    sched:[['Morgen','Nach dem Frühstück Fahrt an die Südküste'],['Nachmittag','Einchecken, Pool und Strand'],['Abend','Schönes Abendessen']],
+    tip:'Heute keinerlei Ausflüge.'},
+  {d:'2027-01-11', title:'Strand und Erholung', route:'Tangalle', hotel:'ana', tags:['Relax'],
+    intro:'Ein komplett freier Tag nach zehn Tagen Rundreise.',
+    sched:[['Ganzer Tag','Ausschlafen, frühstücken, Pool, Meerblick, vielleicht eine Massage im Spa']],
+    warn:'Das Meer an dieser Küste kann kräftige Wellen und Strömungen haben. Beim Hotelpersonal fragen, wo und wann Schwimmen sicher ist.'},
+  {d:'2027-01-12', title:'Tangalle und Schildkröten', route:'Tangalle · Rekawa', drive:'kurz', hotel:'ana', tags:['Relax','Natur'],
+    intro:'Ein kleiner Ausflug, nur wenn ihr Lust habt.',
+    sched:[['Vormittag','Entspannt im Hotel'],['Nachmittag','Tangalle und nähere Umgebung'],['Abend','Optional: Rekawa Beach – geführte Schildkröten-Beobachtung (über das Anantara buchbar)']],
+    warn:'Sichtungen sind nicht garantiert. Blitzlicht und störende Beleuchtung sind tabu.'},
+  {d:'2027-01-13', title:'Letzter voller Tag am Meer', route:'Tangalle', hotel:'ana', tags:['Relax'],
+    intro:'Heute nichts planen und die Anlage wirklich nutzen.',
+    sched:[['Ganzer Tag','Strand, Pool, Spa']],
+    alt:'Falls doch etwas unternommen werden soll: Mulkirigala Rock Temple, ebenfalls als Ausflug beim Anantara buchbar.'},
+  {d:'2027-01-14', title:'Galle Fort', route:'Tangalle → Galle', drive:'1,5–2,5 h', hotel:'arc', tags:['Transfer','Kultur'],
+    intro:'Noch einmal eine ganz andere Atmosphäre als in den Strandresorts.',
+    sched:[['10:30','Abfahrt in Tangalle'],['13:00','Ankunft in Galle, Gepäck abgeben'],['Nachmittag','Spaziergang durch das Fort: Gassen, Boutiquen, Cafés, Leuchtturm, Festungsmauern'],['Abend','Sonnenuntergang auf den Festungsmauern, danach Abendessen']],
+    tip:'Die Unterkunft liegt an der Pedlar Street mitten im Fort – fast alles ist zu Fuss erreichbar.'},
+  {d:'2027-01-15', title:'Ruhiger Abschluss in Negombo', route:'Galle → Negombo', drive:'2,5–3,5 h', hotel:'lag', tags:['Transfer','Relax'],
+    intro:'Zwischen Lagune und Meer, nahe beim Flughafen.',
+    sched:[['10:00','Abfahrt nach dem Frühstück'],['Nachmittag','Pool, Spa und Erholung'],['Abend','Letztes Abendessen in Sri Lanka']]},
+  {d:'2027-01-16', title:'Rückflug nach Zürich', route:'Negombo → Flughafen CMB', drive:'25–40 min', tags:['Flug'],
+    intro:'Etwa drei Stunden vor Abflug am Flughafen sein.',
+    sched:[['07:15','Frühstück'],['07:45','Abfahrt zum Flughafen'],['08:15–08:30','Ankunft am Flughafen'],['11:40','Rückflug nach Zürich'],['17:50','Ankunft in Zürich']]}
+];
+
+const BUDGET = [
+  {k:'Hotels', v:7269, st:'berechnet', c:'var(--maroon)'},
+  {k:'Flüge SWISS', v:2938, st:'fix', c:'var(--ocean)'},
+  {k:'Fahrer & Transfers', v:950, st:'Budget', c:'var(--tea)'},
+  {k:'Essen & Getränke', v:800, st:'Budget', c:'var(--gold)'},
+  {k:'Safaris & Aktivitäten', v:650, st:'Budget', c:'var(--warn)'},
+  {k:'Trinkgelder & Sonstiges', v:275, st:'Budget', c:'var(--muted)'}
+];
+const TODOS = [
+  {id:'t1', t:'Silvesterprogramm Jetwing Vil Uyana', n:'Nach Gala-Dinner, Programm und Pflichtzuschlag fragen', w:'jetzt'},
+  {id:'t2', t:'Privater Fahrer für die Rundreise', n:'Ideal 31.12.–10.01., spätere Transfers separat', w:'bald'},
+  {id:'t3', t:'Hochland-Zug am 05.01.', n:'Fahrplan und Streckenstatus prüfen, Sitzplätze reservieren', w:'Nov/Dez 2026'},
+  {id:'t4', t:'Yala-Safaris buchen', n:'Nachmittag 08.01. und früh am 09.01.', w:'vor Reise'},
+  {id:'t5', t:'Flughafentransfer 16.01.', n:'Abfahrt Jetwing Lagoon ca. 07:45', w:'vor Reise'},
+  {id:'t6', t:'Elefantensafari Sigiriya', n:'Minneriya / Kaudulla / Hurulu nach aktueller Elefantenlage wählen', w:'kurz vor Ort'},
+  {id:'t7', t:'Rekawa Schildkröten', n:'Nur wenn Sichtungs- und Wetterbedingungen passen', w:'vor Ort', opt:true}
+];
+const TRANSFERS = [
+  ['31.12.','CMB → Sigiriya','Privater Fahrer · direkt nach Landung','3,5–4,5 h'],
+  ['03.01.','Sigiriya → Kandy → Madulkelle','Privater Fahrer · Kandy unterwegs','4–5,5 h'],
+  ['05.01.','Madulkelle → Ella','Fahrer + ggf. Zug · Fahrer nimmt Gepäck','5–7 h'],
+  ['08.01.','Ella → Yala','Privater Fahrer · Nachmittagssafari möglich','2,5–3,5 h'],
+  ['10.01.','Yala → Tangalle','Privater Fahrer · danach Strandteil','2–3 h'],
+  ['14.01.','Tangalle → Galle','Separater Transfer','1,5–2,5 h'],
+  ['15.01.','Galle → Negombo','Separater Transfer','2,5–3,5 h'],
+  ['16.01.','Negombo → CMB','Hoteltransfer/Taxi · ab 07:45','25–40 min']
+];
+
+/* ---------------- helpers ---------------- */
+const $ = s => document.querySelector(s);
+const H = Object.fromEntries(HOTELS.map(h=>[h.id,h]));
+const chf = v => 'CHF ' + new Intl.NumberFormat('de-CH').format(Math.round(v));
+const pd = s => { const [y,m,d] = s.split('-').map(Number); return new Date(Date.UTC(y,m-1,d,12)); };
+const fmt = (s,o) => new Intl.DateTimeFormat('de-CH',{timeZone:'UTC',...o}).format(pd(s));
+const wd = s => fmt(s,{weekday:'short'}).replace('.','');
+const dm = s => fmt(s,{day:'numeric',month:'short'}).replace('.','');
+const dshort = s => fmt(s,{day:'2-digit',month:'2-digit'}).replace(/\.?$/,'.');
+const ymdIn = tz => { const p = new Intl.DateTimeFormat('en-CA',{timeZone:tz,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()); return p; };
+const mapsUrl = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+const ICON = {
+  tip:'<svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg>',
+  warn:'<svg viewBox="0 0 24 24"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>',
+  alt:'<svg viewBox="0 0 24 24"><path d="M7 7h10l-3-3M17 17H7l3 3"/></svg>',
+  bed:'<svg viewBox="0 0 24 24"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.6"/></svg>',
+  plane:'<svg viewBox="0 0 24 24"><path d="M2 16l20-6M14 4l4 8-4 8"/></svg>'
+};
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* trip state */
+const TRIP_START='2026-12-30', TRIP_END='2027-01-16';
+function tripState(){
+  const zh = ymdIn('Europe/Zurich'), lk = ymdIn('Asia/Colombo');
+  if (zh < TRIP_START) return {phase:'before', days: Math.round((pd(TRIP_START)-pd(zh))/864e5)};
+  if (lk > TRIP_END && zh > TRIP_END) return {phase:'after'};
+  const today = lk >= '2026-12-31' ? lk : zh;
+  return {phase:'during', today: today > TRIP_END ? TRIP_END : today};
+}
+const STATE = tripState();
+const focusDay = STATE.phase==='during' ? STATE.today : (STATE.phase==='before' ? TRIP_START : TRIP_END);
+
+/* ---------------- overview ---------------- */
+function renderHome(){
+  const c = $('#count');
+  if (STATE.phase==='before') c.innerHTML = `<b>${STATE.days}</b><span>${STATE.days===1?'Tag':'Tage'} bis zum<br>Abflug in Zürich</span>`;
+  else if (STATE.phase==='during'){ const i = DAYS.findIndex(x=>x.d===STATE.today); c.innerHTML = `<b>${i}</b><span>Tag ${i} von 17<br>auf der Insel</span>`; }
+  else c.innerHTML = `<b>17</b><span>Tage Sri Lanka<br>– bis zum nächsten Mal</span>`;
+
+  const t = $('#todayCard');
+  if (STATE.phase==='during'){
+    const d = DAYS.find(x=>x.d===STATE.today), h = d.hotel && H[d.hotel];
+    t.innerHTML = `<div class="eyebrow">Heute · ${wd(d.d)} ${dm(d.d)}</div><h3>${esc(d.title)}</h3><p>${esc(d.route)}${d.drive?' · '+esc(d.drive):''}${h?'<br>Übernachtung: '+esc(h.name):''}</p><button class="linkbtn" data-jump="${d.d}">Tagesprogramm ansehen →</button>`;
+  } else if (STATE.phase==='before'){
+    const open = TODOS.filter(x=>!isDone(x.id)).length;
+    t.innerHTML = `<div class="eyebrow">Als Nächstes</div><h3>${open} offene Punkte vor der Reise</h3><p>Silvesterprogramm im Vil Uyana klären und den privaten Fahrer für 31.12.–10.01. organisieren.</p><button class="linkbtn" data-go="mehr">Planung öffnen →</button>`;
+  } else {
+    t.innerHTML = `<div class="eyebrow">Zurück in Zürich</div><h3>Willkommen zuhause</h3><p>Die ganze Route bleibt hier zum Nachschauen.</p><button class="linkbtn" data-go="karte">Karte ansehen →</button>`;
+  }
+
+  const sp = $('#spine');
+  let html = `<li data-map="cmb"><span class="dot plane">${ICON.plane}</span><span class="t"><b>Colombo Airport</b><span>Landung 08:00</span></span><span class="n"><b>31.12.</b>Ankunft</span></li>`;
+  html += HOTELS.map(h=>`<li data-map="${h.id}"><span class="dot">${h.no}</span><span class="t"><b>${esc(h.region.split(' · ')[0])}<span class="si">${h.si}</span></b><span>${esc(h.name)}</span></span><span class="n"><b>${dshort(h.in)}</b>${h.n} ${h.n===1?'Nacht':'Nächte'}</span></li>`).join('');
+  html += `<li data-map="cmb"><span class="dot plane">${ICON.plane}</span><span class="t"><b>Colombo Airport</b><span>Rückflug 11:40</span></span><span class="n"><b>16.01.</b>Abflug</span></li>`;
+  sp.innerHTML = html;
+}
+
+/* ---------------- days ---------------- */
+function renderDays(){
+  $('#daystrip').innerHTML = DAYS.map(d=>{
+    const cls = d.d===focusDay && STATE.phase==='during' ? 'hl' : (d.drive && /→/.test(d.route) ? 'move':'' );
+    return `<button class="dchip ${cls}" data-jump="${d.d}" aria-label="${fmt(d.d,{weekday:'long',day:'numeric',month:'long'})}"><span>${wd(d.d)}</span><b>${fmt(d.d,{day:'numeric'}).replace('.','')}</b><span>${fmt(d.d,{month:'short'}).replace('.','')}</span></button>`;
+  }).join('');
+  $('#days').innerHTML = DAYS.map((d,i)=>{
+    const h = d.hotel && H[d.hotel];
+    const firstNight = h && h.in===d.d;
+    const note = (k,label,txt) => txt ? `<div class="note ${k}">${ICON[k]}<div><b>${label}</b><p>${esc(txt)}</p></div></div>` : '';
+    return `<article class="day ${STATE.phase==='during'&&d.d===STATE.today?'is-today':''}" id="d-${d.d}">
+      <div class="day-head">
+        <div class="dbadge"><div class="wd">${wd(d.d)}</div><b>${fmt(d.d,{day:'numeric'}).replace('.','')}</b><div class="mo">${fmt(d.d,{month:'short'}).replace('.','')}</div></div>
+        <div class="day-title">
+          <div class="eyebrow">${i===0?'Anreise':'Tag '+i}</div>
+          <h3>${esc(d.title)}</h3>
+          <div class="route"><span><b>${esc(d.route)}</b></span>${d.drive?`<span>${esc(d.drive)}</span>`:''}</div>
+          <div class="tags">${d.tags.map(t=>`<span class="tag ${t}">${t}</span>`).join('')}</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <p class="intro">${esc(d.intro)}</p>
+        <ul class="sched">${d.sched.map(s=>`<li><span class="when">${esc(s[0])}</span><span>${esc(s[1])}</span></li>`).join('')}</ul>
+        ${note('tip','Tipp',d.tip)}${note('warn','Wichtig',d.warn)}${note('alt','Alternative',d.alt)}
+        ${d.link?`<a class="extlink" href="${d.link[1]}" target="_blank" rel="noopener">${esc(d.link[0])} ↗</a>`:''}
+        ${h?`<button class="hotel-line" data-map="${h.id}">${ICON.bed}<span>${firstNight?'Check-in':'Übernachtung'}: <b>${esc(h.name)}</b></span><em>Karte →</em></button>`:''}
+      </div>
+    </article>${i<DAYS.length-1?'<div class="divider"></div>':''}`;
+  }).join('');
+}
+
+/* ---------------- hotels ---------------- */
+function renderHotels(){
+  const nightIdx = s => Math.round((pd(s)-pd('2026-12-31'))/864e5);
+  $('#hotels').innerHTML = HOTELS.map(h=>{
+    const a = nightIdx(h.in), b = a + h.n;
+    const bar = Array.from({length:16},(_,i)=>`<i class="${i>=a&&i<b?'on':''}"></i>`).join('');
+    return `<article class="card hotel" id="h-${h.id}">
+      <div class="hh"><div class="no">${h.no}</div><div><h3>${esc(h.name)}</h3><div class="reg">${esc(h.region)} <span class="si">${h.si}</span>${h.rating?` · <span class="rating">★ ${h.rating}</span>`:''}</div></div></div>
+      <div class="stay">
+        <div><span>Check-in</span><b>${wd(h.in)} ${dm(h.in)}</b></div>
+        <div class="nn"><b>${h.n}</b>${h.n===1?'Nacht':'Nächte'}</div>
+        <div class="r"><span>Check-out</span><b>${wd(h.out)} ${dm(h.out)}</b></div>
+      </div>
+      <div class="nightbar" aria-label="Nacht ${a+1} bis ${b} von 16">${bar}</div>
+      <div class="facts">
+        <div class="full"><span>Zimmer</span>${esc(h.room)}</div>
+        <div class="full"><span>Verpflegung</span>${esc(h.meals)}</div>
+        <div><span>Preis</span><b class="num">${chf(h.chf)}</b></div>
+        <div><span>Pro Nacht</span><b class="num">${chf(h.chf/h.n)}</b></div>
+      </div>
+      <div class="acts"><button data-map="${h.id}">Auf der Karte</button><a href="${mapsUrl(h.q)}" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>`;
+  }).join('');
+}
+
+/* ---------------- more ---------------- */
+let DONE = {};
+try { DONE = JSON.parse(localStorage.getItem('lk-todos')||'{}') || {}; } catch(e) { DONE = {}; }
+function isDone(id){ return !!DONE[id]; }
+function renderMore(){
+  const total = BUDGET.reduce((s,x)=>s+x.v,0);
+  $('#budget').innerHTML = `<div class="budget-total"><b class="num">${chf(total)}</b><span>Gesamtschätzung<br>${chf(total/2)} pro Person</span></div>
+    <div class="stack">${BUDGET.map(x=>`<i style="flex:${x.v};background:${x.c}" title="${x.k}"></i>`).join('')}</div>
+    <ul class="blist">${BUDGET.map(x=>`<li><span class="sw" style="background:${x.c}"></span><span>${x.k}</span><span class="st">${x.st}</span><span class="v">${new Intl.NumberFormat('de-CH').format(x.v)}</span></li>`).join('')}</ul>`;
+  $('#todos').innerHTML = TODOS.map(x=>`<li><label for="${x.id}"><input type="checkbox" id="${x.id}" ${isDone(x.id)?'checked':''}><div><b>${esc(x.t)}</b><small>${esc(x.n)}</small><span class="when ${x.opt?'opt':''}">${x.opt?'optional · ':''}${esc(x.w)}</span></div></label></li>`).join('');
+  updateTodoCount();
+  $('#transfers').innerHTML = TRANSFERS.map(t=>`<li><span class="d">${t[0]}</span><span><b>${esc(t[1])}</b><small>${esc(t[2])}</small></span><span class="h">${esc(t[3])}</span></li>`).join('');
+}
+function updateTodoCount(){ const o = TODOS.filter(x=>!isDone(x.id)).length; $('#todoCount').textContent = o ? `${o} offen` : 'alles erledigt'; }
+document.addEventListener('change', e=>{
+  if (e.target.matches('#todos input')) {
+    DONE[e.target.id] = e.target.checked;
+    try { localStorage.setItem('lk-todos', JSON.stringify(DONE)); } catch(err) {}
+    updateTodoCount(); if (STATE.phase==='before') renderHome();
+  }
+});
+
+/* ---------------- clocks ---------------- */
+function tick(){
+  const f = tz => new Intl.DateTimeFormat('de-CH',{timeZone:tz,hour:'2-digit',minute:'2-digit'}).format(new Date());
+  $('#clkZh').textContent = f('Europe/Zurich'); $('#clkLk').textContent = f('Asia/Colombo');
+}
+
+/* ---------------- map ---------------- */
+let map, markers = {}, selected = null, routeLayer, poiLayer, scrollLock = false;
+const STOPS = [AIRPORT, ...HOTELS];
+function initMap(){
+  if (map || !window.L) return;
+  map = L.map('map',{zoomControl:false, attributionControl:false, zoomSnap:.25, minZoom:6.5, maxZoom:12,
+    maxBounds:[[5.2,78.6],[10.4,82.7]], maxBoundsViscosity:.8, renderer:L.svg({padding:.5})});
+  L.polygon(LK_OUTLINE,{className:'island-glow',interactive:false}).addTo(map);
+  L.polygon(LK_OUTLINE,{className:'island',interactive:false}).addTo(map);
+  REGIONS.forEach(r=>L.marker(r.ll,{interactive:false,icon:L.divIcon({className:'',html:`<div class="region-lbl">${r.t}</div>`,iconSize:[180,20],iconAnchor:[90,10]})}).addTo(map));
+
+  routeLayer = L.layerGroup().addTo(map);
+  LEGS_ROAD.forEach(l=>L.polyline(l,{className:'route-road',interactive:false,smoothFactor:1}).addTo(routeLayer));
+  L.polyline(LEG_TRAIN,{className:'route-train',interactive:false}).addTo(routeLayer);
+
+  poiLayer = L.layerGroup().addTo(map);
+  POIS.forEach(p=>{
+    L.marker(p.ll,{icon:L.divIcon({className:'',html:`<div class="poi ${p.train?'train':''}"></div>`,iconSize:[14,14],iconAnchor:[7,7]})})
+      .bindPopup(`<b>${esc(p.name)}</b><br><span style="color:var(--maroon);font-weight:700">${esc(p.day)}</span><br>${esc(p.txt)}`,{closeButton:false,offset:[0,-4]})
+      .addTo(poiLayer);
+  });
+
+  markers.cmb = L.marker(AIRPORT.ll,{icon:L.divIcon({className:'',html:`<div class="pin-air">${ICON.plane}</div>`,iconSize:[28,28],iconAnchor:[14,14]}),zIndexOffset:500}).addTo(map);
+  markers.cmb.on('click',()=>select('cmb',true,true));
+  HOTELS.forEach(h=>{
+    const m = L.marker(h.ll,{icon:L.divIcon({className:'',html:`<div class="pin" id="pin-${h.id}"><span>${h.no}</span></div>`,iconSize:[34,34],iconAnchor:[17,36]}),zIndexOffset:1000+h.no});
+    m.on('click',()=>select(h.id,true,true));
+    m.addTo(map); markers[h.id]=m;
+  });
+  fitAll(false);
+}
+function fitAll(anim=true){
+  const b = L.latLngBounds(STOPS.map(s=>s.ll));
+  const ch = $('#carousel').offsetHeight || 150;
+  map.fitBounds(b,{paddingTopLeft:[24,56],paddingBottomRight:[24,ch+24],animate:anim});
+}
+function renderCarousel(){
+  const card = s => {
+    const isA = s.id==='cmb';
+    return `<div class="hcard" id="c-${s.id}" data-sel="${s.id}">
+      <div class="top"><span class="no ${isA?'air':''}">${isA?'✈':s.no}</span><div style="min-width:0"><h3>${esc(isA?'Flughafen Colombo':s.name)}</h3><div class="sub">${esc(s.region)}</div></div></div>
+      <div class="meta">${isA?`<span>Ankunft <b>31.12. 08:00</b></span><span>Abflug <b>16.01. 11:40</b></span>`:
+        `<span><b>${wd(s.in)} ${dm(s.in)}</b> → ${wd(s.out)} ${dm(s.out)}</span><span><b>${s.n}</b> ${s.n===1?'Nacht':'Nächte'}</span><span>${esc(s.room.split(',')[0])}</span>`}</div>
+      <div class="go">${isA?'':`<button data-hotel="${s.id}">Details</button>`}<a href="${mapsUrl(s.q)}" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </div>`;
+  };
+  $('#carousel').innerHTML = STOPS.map(card).join('');
+}
+function select(id, pan, scrollCard){
+  selected = id;
+  document.querySelectorAll('.pin.on').forEach(p=>p.classList.remove('on'));
+  const p = document.getElementById('pin-'+id); if (p) p.classList.add('on');
+  document.querySelectorAll('.hcard.on').forEach(c=>c.classList.remove('on'));
+  const c = document.getElementById('c-'+id); if (c) c.classList.add('on');
+  if (pan && map){
+    const s = STOPS.find(x=>x.id===id);
+    const z = Math.max(map.getZoom(), 8.5);
+    const ch = $('#carousel').offsetHeight || 150;
+    const pt = map.project(s.ll, z).add([0, ch/2]);
+    map.flyTo(map.unproject(pt, z), z, {duration:.6});
+  }
+  if (scrollCard && c){
+    scrollLock = true;
+    const car = $('#carousel');
+    car.scrollTo({left: c.offsetLeft - (car.clientWidth - c.offsetWidth)/2, behavior:'smooth'});
+    setTimeout(()=>scrollLock=false, 600);
+  }
+}
+let scrollT;
+$('#carousel').addEventListener('scroll', ()=>{
+  if (scrollLock) return;
+  clearTimeout(scrollT);
+  scrollT = setTimeout(()=>{
+    const car = $('#carousel'), mid = car.scrollLeft + car.clientWidth/2;
+    let best=null, bd=1e9;
+    car.querySelectorAll('.hcard').forEach(c=>{ const d = Math.abs(c.offsetLeft + c.offsetWidth/2 - mid); if (d<bd){bd=d;best=c;} });
+    if (best && best.dataset.sel !== selected) select(best.dataset.sel, true, false);
+  }, 120);
+});
+$('#tgRoute').addEventListener('click', e=>{ const on = e.currentTarget.getAttribute('aria-pressed')==='true'; e.currentTarget.setAttribute('aria-pressed', String(!on)); if(map){ on?map.removeLayer(routeLayer):routeLayer.addTo(map);} });
+$('#tgPoi').addEventListener('click', e=>{ const on = e.currentTarget.getAttribute('aria-pressed')==='true'; e.currentTarget.setAttribute('aria-pressed', String(!on)); if(map){ on?map.removeLayer(poiLayer):poiLayer.addTo(map);} });
+$('#fitAll').addEventListener('click', ()=>{ if(map){ map.closePopup(); fitAll(true);} });
+
+/* ---------------- navigation ---------------- */
+const VIEWS = ['home','karte','tage','hotels','mehr'];
+function go(name, opts={}){
+  if (!VIEWS.includes(name)) name='home';
+  document.querySelectorAll('.view').forEach(v=>v.hidden = v.dataset.view!==name);
+  document.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-selected', String(t.dataset.go===name)));
+  if (name==='karte'){
+    requestAnimationFrame(()=>{
+      if (!map) initMap(); else map.invalidateSize();
+      if (opts.sel) select(opts.sel, true, true);
+    });
+  }
+  if (name==='tage' && opts.day){
+    requestAnimationFrame(()=>{
+      const el = document.getElementById('d-'+opts.day);
+      if (el) el.scrollIntoView({block:'start'});
+      const chip = document.querySelector(`.dchip[data-jump="${opts.day}"]`);
+      if (chip) chip.scrollIntoView({inline:'center',block:'nearest'});
+    });
+  }
+  if (!opts.keepHash) { try { history.replaceState(null,'','#'+name); } catch(e) {} }
+}
+document.addEventListener('click', e=>{
+  const t = e.target.closest('[data-go],[data-map],[data-jump],[data-hotel],[data-sel]');
+  if (!t || e.target.closest('a')) return;
+  if (t.dataset.go) go(t.dataset.go);
+  else if (t.dataset.map) go('karte',{sel:t.dataset.map});
+  else if (t.dataset.jump) go('tage',{day:t.dataset.jump});
+  else if (t.dataset.hotel) { go('hotels'); requestAnimationFrame(()=>document.getElementById('h-'+t.dataset.hotel)?.scrollIntoView({block:'start',behavior:'smooth'})); }
+  else if (t.dataset.sel && t.classList.contains('hcard')) select(t.dataset.sel, true, true);
+});
+
+/* ---------------- boot ---------------- */
+renderHome(); renderDays(); renderHotels(); renderMore(); renderCarousel();
+tick(); setInterval(tick, 15000);
+const start = (location.hash||'').slice(1);
+go(VIEWS.includes(start)?start:'home', {keepHash:true, day: start==='tage'?focusDay:undefined});
+if (!start || start==='home') {}
+/* position day list on today/first day when Tage is opened from the tab bar */
+document.querySelector('.tab[data-go="tage"]').addEventListener('click', ()=>{ if (STATE.phase==='during') go('tage',{day:focusDay}); });
+</script>
+
+</body>
+</html>
